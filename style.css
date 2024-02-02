@@ -1,0 +1,130 @@
+body {
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: black;
+    color: white;
+}
+
+.navItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navTop {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+}
+
+.navTop h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.navTop p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.navItem a {
+    height: 40px;
+}
+
+.searchInput {
+    flex: 1;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.limitedOffer {
+    margin-left: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buyButton, .walletButton {
+    padding: 10px 20px;
+    background-color: yellow; /* Default button color */
+    color: black; /* Default text color */
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.walletButton {
+    background-color: peru; /* Wallet button color */
+}
+
+.container img {
+    margin-top: 100px;
+    width: 100%; /* Adjusted width for smaller screens */
+}
+
+.checkoutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.productDetails {
+    display: flex;
+    width: 80%;
+}
+
+.productImages {
+    flex: 1;
+}
+
+.productDescription {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.productImages img {
+    width: 40%;
+}
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .navItem {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .searchInput {
+        margin: 10px 0; /* Adjust margin for search input */
+    }
+
+    .container img {
+        margin-top: 20px; /* Reduce margin for smaller screens */
+    }
+
+    .productImages img {
+        width: 80%; /* Adjust image width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navItem {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .searchInput {
+        width: 80%; /* Adjust width of search input for smaller screens */
+    }
+
+    .productImages img {
+        width: 100%; /* Adjust image width for smaller screens */
+    }
+}
