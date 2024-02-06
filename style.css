@@ -21,7 +21,9 @@ nav {
 .walletbutton {
     margin-top: 10px; /* Adjust margin for e-wallet button */
 }
-
+.searchInput, .walletButton, .container img {
+    height: 40px;
+}
 .container {
     flex-direction: column;
     align-items: center;
@@ -123,8 +125,13 @@ nav {
 /* Media Queries for responsiveness */
 
 @media screen and (max-width: 768px) {
-    .navItem {
-        flex-direction: column; /* Stack items vertically on smaller screens */
+    .container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: center; /* Center align items on smaller screens */
+    }
+
+    .searchInput, .walletButton, .container img {
+        width: 80%; /* Adjust width for smaller screens */
     }
 
     .searchInput {
@@ -132,24 +139,21 @@ nav {
     }
 
     .container img {
-        margin-top: 20px; /* Reduce margin for smaller screens */
-    }
-
-    .productImages img {
-        width: 80%; /* Adjust image width for smaller screens */
+        margin-top: 20px; /* Adjust margin for image */
     }
 }
 
 @media screen and (max-width: 480px) {
-    .navItem {
-        padding: 10px; /* Adjust padding for smaller screens */
+    .container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: center; /* Center align items on smaller screens */
     }
 
-    .searchInput {
-        width: 80%; /* Adjust width of search input for smaller screens */
+    .searchInput, .walletButton, .container img {
+        width: 100%; /* Adjust width for smaller screens */
     }
 
-    .productImages img {
-        width: 100%; /* Adjust image width for smaller screens */
+    .searchInput, .walletButton {
+        margin-top: 10px; /* Adjust margin for search input and wallet button */
     }
 }
