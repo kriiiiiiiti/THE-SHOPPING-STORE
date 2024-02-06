@@ -139,10 +139,9 @@ nav {
     .navItem img,.searchInput, .walletButton {
         width: 100%; 
         flex-direction: row;
-    }
-    .searchInput, .walletButton {
         margin-top: 0px; 
     }
+   
 } 
 
     
@@ -156,9 +155,8 @@ nav {
 
     .navItem img,.searchInput, .walletButton  {
         width: 100%; 
-    }
-
-    .searchInput, .walletButton {
         margin-top: 0px; 
     }
+
+    
 }
